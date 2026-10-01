@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="380" rx="20" fill="#1c1917"/>
+  <text x="40" y="52" font-size="26" font-weight="800" fill="#fff7ed">🔁 Order Lifecycle</text>
+  <text x="40" y="78" font-size="14" fill="#a8a29e">One ticket travels POS → Kitchen → Counter → Served, forever</text>
+
+  <!-- track -->
+  <line x1="90" y1="200" x2="870" y2="200" stroke="#44403c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="90" y1="200" x2="870" y2="200" stroke="url(#fbg)" stroke-width="6" stroke-linecap="round" stroke-dasharray="26 780" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-806" dur="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- stations -->
+  <g font-size="15" text-anchor="middle">
+    <g>
+      <circle cx="90" cy="200" r="44" fill="#ea580c"/>
+      <text x="90" y="214" font-size="34">🧾</text>
+      <text x="90" y="280" fill="#fff7ed" font-weight="700">POS</text>
+      <text x="90" y="300" fill="#a8a29e" font-size="12">order placed</text>
+    </g>
+    <g>
+      <circle cx="350" cy="200" r="44" fill="#292524" stroke="#f59e0b" stroke-width="3">
+        <animate attributeName="fill" values="#292524;#f59e0b;#292524" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="350" y="214" font-size="34">🍳</text>
+      <text x="350" y="280" fill="#fff7ed" font-weight="700">Kitchen (KDS)</text>
+      <text x="350" y="300" fill="#a8a29e" font-size="12">ticket on screen</text>
+    </g>
+    <g>
+      <circle cx="610" cy="200" r="44" fill="#292524" stroke="#38bdf8" stroke-width="3">
+        <animate attributeName="fill" values="#292524;#38bdf8;#292524" dur="6s" begin="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="610" y="214" font-size="34">🔔</text>
+      <text x="610" y="280" fill="#fff7ed" font-weight="700">Counter</text>
+      <text x="610" y="300" fill="#a8a29e" font-size="12">ready to serve</text>
+    </g>
+    <g>
+      <circle cx="870" cy="200" r="44" fill="#292524" stroke="#4ade80" stroke-width="3">
+        <animate attributeName="fill" values="#292524;#4ade80;#292524" dur="6s" begin="4.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="870" y="214" font-size="34">✅</text>
+      <text x="870" y="280" fill="#fff7ed" font-weight="700">Served</text>
+      <text x="870" y="300" fill="#a8a29e" font-size="12">payment done</text>
+    </g>
+  </g>
+
+  <!-- traveling ticket -->
+  <g>
+    <rect x="-46" y="-34" width="92" height="68" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="13" font-weight="800" fill="#7c2d12">#1042</text>
+    <text x="0" y="14" text-anchor="middle" font-size="11" fill="#57534e">Table 5</text>
+    <animateMotion dur="6s" repeatCount="indefinite" path="M90 130 L870 130" rotate="0"/>
+    <animate attributeName="opacity" values="1;1;1;0" keyTimes="0;0.9;0.98;1" dur="6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- status pills lighting in sequence -->
+  <g font-size="13" font-weight="700" text-anchor="middle">
+    <g opacity="0.25"><animate attributeName="opacity" values="0.25;1;0.25" dur="6s" repeatCount="indefinite"/>
+      <rect x="160" y="322" width="130" height="30" rx="15" fill="#ea580c"/><text x="225" y="342" fill="#fff">PLACED ✓</text></g>
+    <g opacity="0.25"><animate attributeName="opacity" values="0.25;1;0.25" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+      <rect x="330" y="322" width="130" height="30" rx="15" fill="#f59e0b"/><text x="395" y="342" fill="#1c1917">COOKING…</text></g>
+    <g opacity="0.25"><animate attributeName="opacity" values="0.25;1;0.25" dur="6s" begin="3.1s" repeatCount="indefinite"/>
+      <rect x="500" y="322" width="130" height="30" rx="15" fill="#38bdf8"/><text x="565" y="342" fill="#082f49">READY ✓</text></g>
+    <g opacity="0.25"><animate attributeName="opacity" values="0.25;1;0.25" dur="6s" begin="4.7s" repeatCount="indefinite"/>
+      <rect x="670" y="322" width="130" height="30" rx="15" fill="#4ade80"/><text x="735" y="342" fill="#052e16">PAID ✓</text></g>
+  </g>
+</svg>

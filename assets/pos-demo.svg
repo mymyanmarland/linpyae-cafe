@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="'Segoe UI', system-ui, 'Noto Sans Myanmar', sans-serif">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#ffedd5"/>
+    </linearGradient>
+    <filter id="pshadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#9a3412" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="20" fill="url(#pbg)"/>
+  <text x="40" y="52" font-size="28" font-weight="800" fill="#7c2d12">🧾 Point of Sale</text>
+  <text x="40" y="78" font-size="15" fill="#a8a29e">Tap items → cart builds itself, total counts live</text>
+
+  <!-- menu grid: items pop in one by one -->
+  <g font-size="15" filter="url(#pshadow)">
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.5s" fill="freeze"/>
+      <rect x="40" y="100" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="115" y="150" text-anchor="middle" font-size="38">☕</text>
+      <text x="115" y="182" text-anchor="middle" fill="#44403c" font-weight="600">Latte</text>
+      <text x="115" y="204" text-anchor="middle" fill="#ea580c" font-weight="800">4,500 Ks</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.1s" fill="freeze"/>
+      <rect x="205" y="100" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="280" y="150" text-anchor="middle" font-size="38">🥐</text>
+      <text x="280" y="182" text-anchor="middle" fill="#44403c" font-weight="600">Croissant</text>
+      <text x="280" y="204" text-anchor="middle" fill="#ea580c" font-weight="800">3,500 Ks</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.7s" fill="freeze"/>
+      <rect x="370" y="100" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="445" y="150" text-anchor="middle" font-size="38">🧋</text>
+      <text x="445" y="182" text-anchor="middle" fill="#44403c" font-weight="600">Milk Tea</text>
+      <text x="445" y="204" text-anchor="middle" fill="#ea580c" font-weight="800">3,000 Ks</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.3s" fill="freeze"/>
+      <rect x="40" y="235" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="115" y="285" text-anchor="middle" font-size="38">🍜</text>
+      <text x="115" y="317" text-anchor="middle" fill="#44403c" font-weight="600">Shan Noodle</text>
+      <text x="115" y="339" text-anchor="middle" fill="#ea580c" font-weight="800">5,000 Ks</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.9s" fill="freeze"/>
+      <rect x="205" y="235" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="280" y="285" text-anchor="middle" font-size="38">🧃</text>
+      <text x="280" y="317" text-anchor="middle" fill="#44403c" font-weight="600">Lime Juice</text>
+      <text x="280" y="339" text-anchor="middle" fill="#ea580c" font-weight="800">2,500 Ks</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.5s" fill="freeze"/>
+      <rect x="370" y="235" width="150" height="120" rx="14" fill="#fff"/>
+      <text x="445" y="285" text-anchor="middle" font-size="38">🍰</text>
+      <text x="445" y="317" text-anchor="middle" fill="#44403c" font-weight="600">Cake Slice</text>
+      <text x="445" y="339" text-anchor="middle" fill="#ea580c" font-weight="800">4,000 Ks</text></g>
+  </g>
+
+  <!-- flying dots from menu to cart -->
+  <g fill="#ea580c">
+    <circle cx="115" cy="160" r="10" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" dur="1.2s" begin="1.0s" fill="freeze" keyTimes="0;0.15;0.85;1"/>
+      <animateMotion dur="1.2s" begin="1.0s" fill="freeze" path="M0 0 Q 300 -40 590 -60"/>
+    </circle>
+    <circle cx="280" cy="160" r="10" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" dur="1.2s" begin="1.9s" fill="freeze" keyTimes="0;0.15;0.85;1"/>
+      <animateMotion dur="1.2s" begin="1.9s" fill="freeze" path="M0 0 Q 220 -20 425 -30"/>
+    </circle>
+    <circle cx="115" cy="295" r="10" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" dur="1.2s" begin="3.2s" fill="freeze" keyTimes="0;0.15;0.85;1"/>
+      <animateMotion dur="1.2s" begin="3.2s" fill="freeze" path="M0 0 Q 300 -80 590 -150"/>
+    </circle>
+  </g>
+
+  <!-- cart panel -->
+  <g filter="url(#pshadow)">
+    <rect x="580" y="100" width="340" height="420" rx="16" fill="#1c1917"/>
+    <text x="610" y="140" font-size="20" font-weight="800" fill="#fff7ed">🛒 Current Order</text>
+    <text x="610" y="162" font-size="13" fill="#a8a29e">Table 5 • Cashier: Su Su</text>
+    <g font-size="15" fill="#e7e5e4">
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+        <text x="610" y="205">☕ Latte ×1</text><text x="890" y="205" text-anchor="end">4,500</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.1s" fill="freeze"/>
+        <text x="610" y="240">🥐 Croissant ×1</text><text x="890" y="240" text-anchor="end">3,500</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.4s" fill="freeze"/>
+        <text x="610" y="275">🍜 Shan Noodle ×1</text><text x="890" y="275" text-anchor="end">5,000</text></g>
+    </g>
+    <line x1="610" y1="300" x2="890" y2="300" stroke="#44403c"/>
+    <text x="610" y="330" font-size="14" fill="#a8a29e">Subtotal</text>
+    <g text-anchor="end" font-size="30" font-weight="800" fill="#4ade80">
+      <text x="890" y="335">0 Ks<animate attributeName="opacity" values="1;0" dur="0.15s" begin="2.2s" fill="freeze"/></text>
+      <text x="890" y="335" opacity="0">4,500 Ks<animate attributeName="opacity" values="0;1" dur="0.15s" begin="2.2s" fill="freeze"/><animate attributeName="opacity" values="1;0" dur="0.15s" begin="3.1s" fill="freeze"/></text>
+      <text x="890" y="335" opacity="0">8,000 Ks<animate attributeName="opacity" values="0;1" dur="0.15s" begin="3.1s" fill="freeze"/><animate attributeName="opacity" values="1;0" dur="0.15s" begin="4.4s" fill="freeze"/></text>
+      <text x="890" y="335" opacity="0">13,000 Ks<animate attributeName="opacity" values="0;1" dur="0.15s" begin="4.4s" fill="freeze"/></text>
+    </g>
+    <rect x="610" y="360" width="280" height="56" rx="14" fill="#ea580c">
+      <animate attributeName="opacity" values="1;0.6;1" dur="1.4s" begin="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="750" y="395" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">💳 CHARGE</text>
+    <g font-size="13" fill="#78716c">
+      <text x="610" y="450">💵 Cash</text><text x="700" y="450">📱 KBPay</text><text x="790" y="450">🌊 WavePay</text>
+    </g>
+    <text x="750" y="498" text-anchor="middle" font-size="12" fill="#57534e">PIN login • my/en toggle • works offline-first</text>
+  </g>
+
+  <!-- loop restart hint -->
+  <text x="480" y="545" text-anchor="middle" font-size="12" fill="#a8a29e">↻ refresh to replay the animation</text>
+</svg>

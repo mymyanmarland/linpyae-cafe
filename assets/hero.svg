@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" font-family="'Segoe UI', system-ui, 'Noto Sans Myanmar', 'Myanmar3', 'Pyidaungsu', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0f06"/>
+      <stop offset="0.5" stop-color="#2b1608"/>
+      <stop offset="1" stop-color="#120a04"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0; 0.08 0.05; 0 0" dur="14s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#92400e"/>
+      <stop offset="1" stop-color="#451a03"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="typeclip">
+      <rect x="402" y="168" width="0" height="48">
+        <animate attributeName="width" values="0;255" dur="2.8s" begin="0.5s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1280" height="480" fill="url(#bg)"/>
+
+  <!-- drifting glow orbs -->
+  <ellipse cx="220" cy="120" rx="180" ry="120" fill="url(#glow)" filter="url(#soft)">
+    <animate attributeName="cx" values="220;280;220" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="11s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1050" cy="380" rx="200" ry="130" fill="url(#glow)" filter="url(#soft)">
+    <animate attributeName="cx" values="1050;990;1050" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="13s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- twinkling sparkles -->
+  <g fill="#fbbf24">
+    <circle cx="120" cy="300" r="3"><animate attributeName="opacity" values="0;1;0" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="90" r="2.5"><animate attributeName="opacity" values="0;1;0" dur="3.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="400" r="3"><animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1150" cy="140" r="2.5"><animate attributeName="opacity" values="0;1;0" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="70" r="2"><animate attributeName="opacity" values="0;1;0" dur="2.8s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="420" r="2"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="2.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- coffee cup with rising steam -->
+  <g transform="translate(180,150)">
+    <g stroke="#fdba74" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M55 20 q 14 -18 0 -36 q -14 -18 0 -36">
+        <animate attributeName="d" values="M55 20 q 14 -18 0 -36 q -14 -18 0 -36;M55 20 q -14 -18 0 -36 q 14 -18 0 -36;M55 20 q 14 -18 0 -36 q -14 -18 0 -36" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0.25;0.9" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M95 20 q 14 -18 0 -36 q -14 -18 0 -36">
+        <animate attributeName="d" values="M95 20 q -14 -18 0 -36 q 14 -18 0 -36;M95 20 q 14 -18 0 -36 q -14 -18 0 -36;M95 20 q -14 -18 0 -36 q 14 -18 0 -36" dur="3s" begin="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0.9;0.25" dur="3s" begin="0.7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <path d="M20 40 h110 v70 a55 55 0 0 1 -110 0 z" fill="url(#cup)"/>
+    <ellipse cx="75" cy="40" rx="55" ry="14" fill="#ffedd5"/>
+    <ellipse cx="75" cy="42" rx="44" ry="10" fill="url(#coffee)">
+      <animate attributeName="rx" values="44;47;44" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M130 55 q 34 6 26 40 q -7 30 -34 28" fill="none" stroke="#ffedd5" stroke-width="13" stroke-linecap="round"/>
+    <ellipse cx="75" cy="178" rx="70" ry="10" fill="#000" opacity="0.35"/>
+    <text x="75" y="120" text-anchor="middle" font-size="44">☕</text>
+  </g>
+
+  <!-- headline with typing animation -->
+  <g>
+    <text x="400" y="150" font-size="64" font-weight="800" fill="#fff7ed" letter-spacing="1">
+      လင်းပြေကော်ဖီ
+      <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze"/>
+    </text>
+    <g clip-path="url(#typeclip)">
+      <text x="402" y="205" font-size="34" font-weight="700" fill="#fdba74" font-family="'Courier New', monospace">Linpyae Cafe</text>
+    </g>
+    <rect x="402" y="172" width="18" height="38" fill="#fdba74">
+      <animate attributeName="x" values="402;657" dur="2.8s" begin="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;1;0;1;0;1" keyTimes="0;0.82;0.85;0.9;0.95;1" dur="4.4s" fill="freeze"/>
+    </rect>
+    <text x="402" y="252" font-size="22" fill="#d6a97c">Shop Management System — POS • KDS • Inventory • Reports</text>
+    <rect x="400" y="276" width="560" height="4" rx="2" fill="#7c2d12">
+      <rect x="400" y="276" width="560" height="4" rx="2" fill="#f97316">
+        <animate attributeName="width" values="0;560" dur="2.4s" begin="0.6s" fill="freeze"/>
+      </rect>
+    </rect>
+  </g>
+
+  <!-- floating order cards -->
+  <g font-size="15">
+    <g transform="translate(400,320)">
+      <rect width="230" height="76" rx="14" fill="#ffffff" opacity="0.08"/>
+      <rect width="230" height="76" rx="14" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.6"/>
+      <text x="16" y="30" fill="#ffedd5" font-weight="700">🧾 Order #1042</text>
+      <text x="16" y="54" fill="#fdba74">2× Latte • 1× Croissant</text>
+      <text x="196" y="30" fill="#4ade80" font-weight="800" text-anchor="end">9,000<tspan font-size="11"> Ks</tspan></text>
+      <animateTransform attributeName="transform" type="translate" values="400 320; 400 306; 400 320" dur="5s" repeatCount="indefinite" additive="replace"/>
+    </g>
+    <g transform="translate(660,320)">
+      <rect width="230" height="76" rx="14" fill="#ffffff" opacity="0.08"/>
+      <rect width="230" height="76" rx="14" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.6"/>
+      <text x="16" y="30" fill="#ffedd5" font-weight="700">🍳 KDS • Table 5</text>
+      <text x="16" y="54" fill="#fdba74">Shan Noodles ×2 — cooking</text>
+      <circle cx="212" cy="24" r="8" fill="#f59e0b">
+        <animate attributeName="r" values="8;11;8" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="translate" values="660 320; 660 334; 660 320" dur="6s" begin="1s" repeatCount="indefinite" additive="replace"/>
+    </g>
+    <g transform="translate(920,320)">
+      <rect width="230" height="76" rx="14" fill="#ffffff" opacity="0.08"/>
+      <rect width="230" height="76" rx="14" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.6"/>
+      <text x="16" y="30" fill="#ffedd5" font-weight="700">📦 Inventory</text>
+      <text x="16" y="54" fill="#fdba74">Milk 12.5 L • Beans 3.2 kg</text>
+      <text x="196" y="30" fill="#4ade80" font-weight="800" text-anchor="end">✓ OK</text>
+      <animateTransform attributeName="transform" type="translate" values="920 320; 920 306; 920 320" dur="5.5s" begin="2s" repeatCount="indefinite" additive="replace"/>
+    </g>
+  </g>
+
+  <!-- tech badges -->
+  <g font-size="14" font-weight="600">
+    <g><rect x="402" y="416" width="118" height="32" rx="16" fill="#f97316"/><text x="461" y="437" text-anchor="middle" fill="#1a0f06">Next.js 16</text></g>
+    <g><rect x="530" y="416" width="110" height="32" rx="16" fill="#1c1917" stroke="#f97316"/><text x="585" y="437" text-anchor="middle" fill="#fdba74">Prisma 6</text></g>
+    <g><rect x="650" y="416" width="118" height="32" rx="16" fill="#1c1917" stroke="#f97316"/><text x="709" y="437" text-anchor="middle" fill="#fdba74">TypeScript</text></g>
+    <g><rect x="778" y="416" width="130" height="32" rx="16" fill="#1c1917" stroke="#f97316"/><text x="843" y="437" text-anchor="middle" fill="#fdba74">Tailwind v4</text></g>
+    <g><rect x="918" y="416" width="122" height="32" rx="16" fill="#1c1917" stroke="#f97316"/><text x="979" y="437" text-anchor="middle" fill="#fdba74">better-auth</text></g>
+    <g>
+      <rect x="1050" y="416" width="150" height="32" rx="16" fill="#4ade80"/>
+      <text x="1125" y="437" text-anchor="middle" fill="#052e16">● LIVE DEMO</text>
+      <animate attributeName="opacity" values="1;0.75;1" dur="1.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

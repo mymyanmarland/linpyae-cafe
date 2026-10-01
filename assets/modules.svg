@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect width="960" height="460" rx="20" fill="#fff7ed"/>
+  <text x="40" y="52" font-size="26" font-weight="800" fill="#7c2d12">🧩 8 Modules</text>
+  <text x="40" y="78" font-size="14" fill="#a8a29e">Everything a Myanmar cafe needs — one codebase</text>
+
+  <g font-size="14">
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <rect x="40" y="100" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="142" y="150" text-anchor="middle" font-size="40">🧾</text>
+      <text x="142" y="182" text-anchor="middle" font-weight="800" fill="#1c1917">POS</text>
+      <text x="142" y="206" text-anchor="middle" fill="#78716c" font-size="12">fast checkout</text>
+      <text x="142" y="224" text-anchor="middle" fill="#78716c" font-size="12">KBPay • WavePay</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+      <rect x="260" y="100" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="362" y="150" text-anchor="middle" font-size="40">🍳</text>
+      <text x="362" y="182" text-anchor="middle" font-weight="800" fill="#1c1917">Kitchen Display</text>
+      <text x="362" y="206" text-anchor="middle" fill="#78716c" font-size="12">live tickets</text>
+      <text x="362" y="224" text-anchor="middle" fill="#78716c" font-size="12">prep timers</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
+      <rect x="480" y="100" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="582" y="150" text-anchor="middle" font-size="40">📋</text>
+      <text x="582" y="182" text-anchor="middle" font-weight="800" fill="#1c1917">Orders</text>
+      <text x="582" y="206" text-anchor="middle" fill="#78716c" font-size="12">dine-in • takeaway</text>
+      <text x="582" y="224" text-anchor="middle" fill="#78716c" font-size="12">delivery tracking</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+      <rect x="700" y="100" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="802" y="150" text-anchor="middle" font-size="40">🍽️</text>
+      <text x="802" y="182" text-anchor="middle" font-weight="800" fill="#1c1917">Menu</text>
+      <text x="802" y="206" text-anchor="middle" fill="#78716c" font-size="12">bilingual my/en</text>
+      <text x="802" y="224" text-anchor="middle" fill="#78716c" font-size="12">modifiers • photos</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
+      <rect x="40" y="258" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="142" y="308" text-anchor="middle" font-size="40">📦</text>
+      <text x="142" y="340" text-anchor="middle" font-weight="800" fill="#1c1917">Inventory</text>
+      <text x="142" y="364" text-anchor="middle" fill="#78716c" font-size="12">recipes • stock</text>
+      <text x="142" y="382" text-anchor="middle" fill="#78716c" font-size="12">low-stock alerts</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.8s" fill="freeze"/>
+      <rect x="260" y="258" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="362" y="308" text-anchor="middle" font-size="40">👥</text>
+      <text x="362" y="340" text-anchor="middle" font-weight="800" fill="#1c1917">Staff</text>
+      <text x="362" y="364" text-anchor="middle" fill="#78716c" font-size="12">roles • PIN login</text>
+      <text x="362" y="382" text-anchor="middle" fill="#78716c" font-size="12">shifts • attendance</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.1s" fill="freeze"/>
+      <rect x="480" y="258" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="582" y="308" text-anchor="middle" font-size="40">📊</text>
+      <text x="582" y="340" text-anchor="middle" font-weight="800" fill="#1c1917">Reports</text>
+      <text x="582" y="364" text-anchor="middle" fill="#78716c" font-size="12">sales • profit</text>
+      <text x="582" y="382" text-anchor="middle" fill="#78716c" font-size="12">daily close</text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.4s" fill="freeze"/>
+      <rect x="700" y="258" width="205" height="140" rx="16" fill="#fff" stroke="#ea580c" stroke-width="2"/>
+      <text x="802" y="308" text-anchor="middle" font-size="40">⚙️</text>
+      <text x="802" y="340" text-anchor="middle" font-weight="800" fill="#1c1917">Settings</text>
+      <text x="802" y="364" text-anchor="middle" fill="#78716c" font-size="12">branches • taxes</text>
+      <text x="802" y="382" text-anchor="middle" fill="#78716c" font-size="12">receipts • webhooks</text></g>
+  </g>
+
+  <!-- pulsing ring on POS card to draw the eye -->
+  <rect x="40" y="100" width="205" height="140" rx="16" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0">
+    <animate attributeName="opacity" values="0;0.9;0" dur="2s" begin="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

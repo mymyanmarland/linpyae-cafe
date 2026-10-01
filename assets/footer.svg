@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="200" viewBox="0 0 1280 200" font-family="'Segoe UI', system-ui, 'Noto Sans Myanmar', sans-serif">
+  <defs>
+    <linearGradient id="ftop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#431407"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="200" fill="url(#ftop)"/>
+  <path d="M0 30 Q 80 5 160 30 T 320 30 T 480 30 T 640 30 T 800 30 T 960 30 T 1120 30 T 1280 30 L1280 0 L0 0 Z" fill="#ea580c" opacity="0.35">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -160 0; 0 0" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 45 Q 80 22 160 45 T 320 45 T 480 45 T 640 45 T 800 45 T 960 45 T 1120 45 T 1280 45 L1280 0 L0 0 Z" fill="#fbbf24" opacity="0.25">
+    <animateTransform attributeName="transform" type="translate" values="-160 0; 0 0; -160 0" dur="11s" repeatCount="indefinite"/>
+  </path>
+
+  <g text-anchor="middle">
+    <text x="640" y="110" font-size="30">
+      <tspan>☕</tspan>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="640" y="150" font-size="22" font-weight="700" fill="#ffedd5">လင်းပြေကော်ဖီ — brewed with code &amp; caffeine</text>
+    <text x="640" y="178" font-size="14" fill="#d6a97c">MIT License • Built by 808 Coder • Powered by Next.js 16 + Prisma</text>
+  </g>
+
+  <g fill="#fbbf24">
+    <circle cx="200" cy="140" r="3"><animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="120" r="2.5"><animate attributeName="opacity" values="0;1;0" dur="3.4s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="160" r="2"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.5s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

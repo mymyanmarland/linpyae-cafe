@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect width="960" height="300" rx="20" fill="#1c1917"/>
+  <text x="40" y="52" font-size="24" font-weight="800" fill="#fff7ed">⚡ Tech Stack</text>
+
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <g>
+      <rect x="40" y="90" width="150" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="115" y="140" font-size="38">▲</text>
+      <text x="115" y="170" fill="#fff7ed">Next.js 16</text>
+      <text x="115" y="192" fill="#78716c" font-size="12" font-weight="400">App Router • PPR</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="205" y="90" width="150" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="280" y="140" font-size="38">◈</text>
+      <text x="280" y="170" fill="#fff7ed">Prisma 6</text>
+      <text x="280" y="192" fill="#78716c" font-size="12" font-weight="400">25 models</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="370" y="90" width="150" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="445" y="140" font-size="38">📘</text>
+      <text x="445" y="170" fill="#fff7ed">TypeScript</text>
+      <text x="445" y="192" fill="#78716c" font-size="12" font-weight="400">strict • zod</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="535" y="90" width="150" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="610" y="140" font-size="38">🎨</text>
+      <text x="610" y="170" fill="#fff7ed">Tailwind v4</text>
+      <text x="610" y="192" fill="#78716c" font-size="12" font-weight="400">dark mode</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="700" y="90" width="105" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="752" y="140" font-size="38">🔐</text>
+      <text x="752" y="170" fill="#fff7ed" font-size="13">better-auth</text>
+      <text x="752" y="192" fill="#78716c" font-size="12" font-weight="400">PIN + email</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="815" y="90" width="105" height="120" rx="14" fill="#292524" stroke="#f97316" stroke-width="2"/>
+      <text x="867" y="140" font-size="38">🐘</text>
+      <text x="867" y="170" fill="#fff7ed" font-size="13">Postgres</text>
+      <text x="867" y="192" fill="#78716c" font-size="12" font-weight="400">prod DB</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" begin="2.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <text x="480" y="262" text-anchor="middle" font-size="13" fill="#78716c">Server Actions • SWR • react-hook-form • Asia/Yangon timezone • Ks currency • my/en bilingual</text>
+</svg>

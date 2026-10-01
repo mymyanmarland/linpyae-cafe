@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="80" viewBox="0 0 1280 80" preserveAspectRatio="none">
+  <path d="M0 40 Q 80 10 160 40 T 320 40 T 480 40 T 640 40 T 800 40 T 960 40 T 1120 40 T 1280 40 L1280 80 L0 80 Z" fill="#ea580c" opacity="0.25">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -160 0; 0 0" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 50 Q 80 25 160 50 T 320 50 T 480 50 T 640 50 T 800 50 T 960 50 T 1120 50 T 1280 50 L1280 80 L0 80 Z" fill="#ea580c" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="-160 0; 0 0; -160 0" dur="12s" repeatCount="indefinite"/>
+  </path>
+</svg>
